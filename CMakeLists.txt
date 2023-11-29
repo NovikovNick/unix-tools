@@ -13,5 +13,8 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
 
-# tools
+# my ls, nothing special
 add_executable("ls" "src/tools/ls.cc")
+
+# fork process and execute passed command in child process
+add_executable("exec" "src/tools/exec.cc")
